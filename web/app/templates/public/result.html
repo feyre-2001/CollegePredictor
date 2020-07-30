@@ -1,0 +1,72 @@
+{% extends "public/templates/public_template.html" %}
+
+{% block scripts_css %}
+<link rel="stylesheet" href={{ url_for('static', filename='css/rstyle.css') }}>
+{% endblock scripts_css %}
+
+
+{% block title %}College Predictor 2020{% endblock %}
+
+{% block main %}
+
+    <div class='signup-container'>
+        <div class='left-container'>
+            <h1>
+                <i class='fas fa-graduation-cap'></i>
+
+                College Predictor 2020
+            </h1>
+            <div class="puppy">
+                <p></p>
+
+            </div>
+            <!-- <div class='puppy'>
+            <img src='https://media.istockphoto.com/vectors/education-exam-preparation-smiling-student-holding-a-pile-of-books-vector-id985960958?k=6&m=985960958&s=612x612&w=0&h=mFXjl4DFm0Ska-eXgUavYgimJjNpWdDsswCeBP4XvSg='>
+        </div> -->
+    </div>
+    <div class='right-container'>
+        {% block headerTitle %}
+        <h1>Congratulations ! <br> Your expected PwD rank is <br><bold>828</bold>. <br>You might be ahead of 12,36,667 students</h1>
+        {% endblock headerTitle %}
+
+        <!-- <header> -->
+            <div class='state clg_list'>
+                <h1>Your expected colleges:</h1>
+                <h4><ul>
+                    <!-- <li>National Institute of Technology Surat
+                    <ul>
+                    <li>Cse</li>
+                    <li>engg</li>
+                </ul>
+            </li> -->
+            <br>
+            <table style="width:100%">
+                <tr>
+                    <th>College</th>
+                    <th>Branch</th>
+                    <th>Round</th>
+                </tr>
+                <tr>
+                    <td>Indian Institute of Information Technology</td>
+                    <td>Information Technology</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    <!-- </header> -->
+    <footer>
+        <div class='set'>
+            <button id='next' onclick="window.location.href='/'">Back</button>
+        </div>
+    </footer>
+</div>
+</div>
+{% endblock main %}
+
+{% block scripts_js %}
+{% endblock scripts_js %}
