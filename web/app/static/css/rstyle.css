@@ -77,7 +77,7 @@ body {
 }
 .right-container h1:nth-of-type(1) {
   color: rgba(0, 0, 0, 0.8);
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 600;
 }
 .right-container .set {
@@ -95,9 +95,32 @@ body {
 .right-container input, .right-container label {
   color: rgba(0, 0, 0, 0.8);
 }
+
 .right-container header, h1 {
-  padding: 40px;
+    padding: 40px 10px 20px 40px;
 }
+
+bold{
+    font-size: 48px;
+}
+
+.right-container .lines {
+padding: 0px 10px 0px 40px;
+}
+
+ul{
+    padding: 0px 32px 0px 40px;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+.right-container .heading {
+  padding: 0px 0px 0px 40px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
 .right-container label, .right-container input, .right-container .pets-photo {
   width: 176px;
 }
