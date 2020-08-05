@@ -83,17 +83,7 @@ body {
 .right-container .set {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
-}
-.right-container input {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  height: 38px;
-  line-height: 38px;
-  padding-left: 5px;
-}
-.right-container input, .right-container label {
-  color: rgba(0, 0, 0, 0.8);
+  margin: 15px 0;
 }
 
 .right-container header, h1 {
@@ -105,18 +95,18 @@ bold{
 }
 
 .right-container .lines {
-padding: 0px 10px 0px 40px;
+padding: 0px 0px 0px 0px;
 }
 
 ul{
-    padding: 0px 32px 0px 40px;
+    padding: 0px 20px 0px 20px;
     font-size: 20px;
     font-weight: lighter;
 
 }
 
 .right-container .heading {
-  padding: 0px 0px 0px 40px;
+  padding: 0px 0px 0px 20px;
   font-size: 20px;
   font-weight: 100;
 }
@@ -150,7 +140,7 @@ ul{
   align-items: center;
   background: #fff;
   display: grid;
-  padding: 5px 40px;
+  padding: 2px 40px;
 }
 .right-container footer button {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -188,27 +178,4 @@ ul{
   border-radius: 4px;
   display: inline-block;
   padding: 5px;
-}
-
-.radio-container label {
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  display: inline-block;
-  height: 26px;
-  line-height: 26px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  transition: .2s all ease-in-out;
-  width: 80px;
-}
-
-.radio-container input[type="radio"] {
-  display: none;
-}
-
-.radio-container input[type="radio"]:checked + label {
-  background: #F7B1AB;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }

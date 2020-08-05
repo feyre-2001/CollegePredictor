@@ -16,9 +16,10 @@ def index():
 
 
         if(percentile=="" and rank==""):
+            # WORK ON SENDING FLASHES
             flash("You need to enter either a Rank or a Perentile")
             return render_template("public/index.html")
-        #
+
         if(rank==""):
             rank=-1;
 
@@ -29,7 +30,3 @@ def index():
         print(percentile,rank,state,pwd,gender,category)
         return render_template("public/result.html")
     return render_template("public/index.html")
-
-@app.route("/about")
-def about():
-    return "<h1 style='color: red'>About Me</h1>"

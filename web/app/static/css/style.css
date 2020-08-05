@@ -83,7 +83,7 @@ body {
 .right-container .set {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .right-container input, select {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -96,7 +96,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 .right-container header, h1{
-  padding: 40px;
+  padding: 25px;
 }
 .right-container label, .right-container input, .right-container .pets-photo {
   width: 176px;
@@ -127,7 +127,7 @@ body {
   align-items: center;
   background: #fff;
   display: grid;
-  padding: 5px 40px;
+  padding: 2px 40px;
 }
 .right-container footer button {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -177,7 +177,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  transition: .2s all ease-in-out;
+  transition: .3s all ease-in-out;
   width: 80px;
 }
 
