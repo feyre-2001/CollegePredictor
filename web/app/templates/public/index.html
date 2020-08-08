@@ -27,10 +27,20 @@
 </div>
 <div class='right-container'>
     {% block headerTitle %}
-    
+
         <h1>All the Best ! Remember this wont change your life upside down</h1>
     {% endblock headerTitle %}
     <header>
+        {% with messages= get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category,message in messages %}
+              <div class="alert alert-danger" role="alert">
+                <h3>{{message}}</h3>
+            </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
         <form action="/" method="POST">
 
 

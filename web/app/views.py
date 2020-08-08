@@ -16,18 +16,17 @@ def index():
 
 
         if(percentile=="" and rank==""):
-            # WORK ON SENDING FLASHES
-            # flash("You need to enter either a Rank or a Perentile")
-            # return render_template("public/index.html")
+            flash("Please enter either your Rank or your Percentile",'error')
+            return redirect(request.url)
 
-            rank=-1;
-            percentile=-1;
 
         if(rank==""):
             rank=-1;
 
-        #TO PRINT AND ACCESS ALL THE DETAILS:
-        # print(req)
+        if(percentile==""):
+            percentile=-1;
+
+
 
         #TO GET A SPECIFIC FIELD AND USE ITS DATA AND I THINK YAHI USE KARNA HOGA
         print(percentile,rank,state,pwd,gender,category)

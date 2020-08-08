@@ -189,3 +189,10 @@ body {
   background: #F7B1AB;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+h3{
+  font-size: 16px;
+  color: black;
+  align-self: center;
+}
