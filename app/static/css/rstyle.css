@@ -1,0 +1,139 @@
+ews@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  align-items: center;
+  background: #D8AA96;
+  color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100vh;
+  width: auto;
+  justify-items: center;
+  weight: 100vw;
+}
+
+.signup-container {
+  display: grid;
+  grid-template-areas: "left right";
+  max-width: 900px;
+}
+
+.left-container {
+  background: #807182;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: auto;
+}
+.left-container h1 {
+    padding: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-size: 24px;
+}
+.left-container h1 i {
+  background: #F7B1AB;
+  border-radius: 50%;
+  color: #807182;
+  font-size: 24px;
+  margin-right: 5px;
+  padding: 10px;
+  transform: rotate(-30deg);
+}
+
+.right-container {
+  background: #f9c7c2;
+  display: grid;
+  grid-template-areas: "." ".";
+  width: 500px;
+}
+.right-container h1:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 23px;
+  font-weight: 600;
+}
+.right-container .set {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.right-container header, h1 {
+    padding: 40px 10px 20px 40px;
+}
+
+bold{
+    font-size: 48px;
+}
+
+
+.right-container .heading {
+  padding: 0px 0px 0px 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.right-container footer {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  padding: 2px 40px;
+}
+
+.right-container footer button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 38px;
+  line-height: 38px;
+  width: 100px;
+  border-radius: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.right-container footer #next {
+  background: #807182;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.right-container footer #next:hover {
+  background: #171A2B;
+}
+
+.percentile label,.rank label, .state label, .gender label,.pwd label, .ews label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.left-container .puppy {
+  bottom: -5px;
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+
+.made_with
+{
+  bottom: -5px;
+  position: absolute;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  padding: 1px 0 1px 1px;
+}
+
+table,th
+{
+  text-align: center;
+  padding: 5px;
+}
