@@ -18,17 +18,14 @@
             </b>
         </h1>
         <div class="puppy">
-            <p></p>
-
+          <p>We are not affiliated with NTA or JOSAA.</p>
+          <p>We are predicting your branches and colleges based on the cutoff lists of previous year provided by JOSAA.</p>
         </div>
-        <!-- <div class='puppy'>
-        <img src='https://media.istockphoto.com/vectors/education-exam-preparation-smiling-student-holding-a-pile-of-books-vector-id985960958?k=6&m=985960958&s=612x612&w=0&h=mFXjl4DFm0Ska-eXgUavYgimJjNpWdDsswCeBP4XvSg='>
-    </div> -->
 </div>
 <div class='right-container'>
     {% block headerTitle %}
 
-        <h1>All the Best ! Remember this wont change your life upside down</h1>
+        <h1>Find your expected college and branch based on JEE Mains 2020</h1>
     {% endblock headerTitle %}
     <header>
         {% with messages= get_flashed_messages(with_categories=true) %}
@@ -153,7 +150,14 @@
 </form>
 
 </div>
+
 </div>
+<a class="made_with" href="https://github.com/feyre-2001/CollegePredictor" target="_blank">
+  <footer><link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  Source Code on   <ion-icon name="logo-github"> </ion-icon></footer>
+
+</a>
+
 
 {% endblock main %}
 

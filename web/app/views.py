@@ -19,7 +19,6 @@ def index():
             flash("Please enter either your Rank or your Percentile",'error')
             return redirect(request.url)
 
-
         if(rank==""):
             rank=-1;
 
