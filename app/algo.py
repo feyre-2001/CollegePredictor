@@ -1,4 +1,4 @@
-def final(rank1,perc,category,state,gender,pwd):
+def final(rank1,perc,category,state,gender,pwd,sortby):
     import pandas as pd
     import numpy as np
 
@@ -35,9 +35,7 @@ def final(rank1,perc,category,state,gender,pwd):
             if(p['Quota'][i]=='HS'):
                 v.append(i)
     q=p.drop(index=v)
-    q=q.sort_values('Branch Name')
-    # klaus=q[(q['Branch Name']=='CS')|(q['Branch Name']=='IT')|(q['Branch Name']=='ME')|(q['Branch Name']=='ECE')|(q['Branch Name']=='CSE')]
-    klaus=q;
-    klaus.reset_index(drop=True,inplace=True);
-
-    return klaus.drop(['Quota','Category','Seat Pool','Opening Rank','Closing Rank','State'],axis=1)
+    q=q.sort_values(sortby)
+    x=q.drop(['Quota','Category','Seat Pool','Opening Rank','Closing Rank','State','Round No'],axis=1).drop_duplicates()
+    x.reset_index(inplace=True,drop=True)
+    return x

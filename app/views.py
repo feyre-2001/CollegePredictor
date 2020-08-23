@@ -15,6 +15,7 @@ def index():
         pwd=req["pwd"]
         gender=req["gender"]
         category=req["category"]
+        sortby=str(req["sortby"])
 
 
         if(percentile=="" and rank==""):
@@ -25,20 +26,13 @@ def index():
             ranks=pvr(float(percentile),pwd,category);
             if(ranks<=0):
                 ranks=2;
-            result=final(float(ranks),float(percentile),category,state,gender,pwd);
-            tables=result.to_html();
+            result=final(float(ranks),float(percentile),category,state,gender,pwd,sortby);
 
 
         if(rank):
-            result=final(int(rank),percentile,category,state,gender,pwd);
+            result=(int(rank),percentile,category,state,gender,pwd,sortby);
             ranks=rank;
 
         return render_template("public/result.html",ranks=ranks,category=category,tables=[result.to_html(classes='data')], titles=result.columns.values)
 
     return render_template("public/index.html")
-
-
-
-@app.route("/more")
-def more():
-    return "loil";

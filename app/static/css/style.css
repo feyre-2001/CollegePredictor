@@ -121,7 +121,7 @@ body {
   background: #171A2B;
 }
 
-.percentile label,.rank label, .state label, .gender label,.pwd label, .ews label, .category label {
+.percentile label,.rank label, .state label, .gender label,.pwd label, .ews label, .category label, .sortby label{
   display: block;
   margin-bottom: 5px;
 }
