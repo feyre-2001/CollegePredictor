@@ -11,6 +11,7 @@
 
 <div class='signup-container'>
     <div class='left-container'>
+
         <h1>
           <a href="/" style="color:black">
             <i class='fas fa-graduation-cap'></i>
@@ -25,7 +26,8 @@
           <p>We are only showing the top colleges based on previous ranks.</p>
         </div>
 </div>
-<div class='right-container'>
+
+<div class='right-container container-fluid'>
     {% block headerTitle %}
 
         <h1>Find your expected college and branch based on JEE Mains 2020</h1>
@@ -41,13 +43,12 @@
           {% endif %}
         {% endwith %}
 
+
         <form action="/" method="POST">
-
-
             <div class='set'>
                 <div class='percentile'>
                     <label for='percentile'>Percentile</label>
-                    <input id='percentile' placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    <input id='percentile' class="form-control" placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
                 </div>
                 <div class='rank'>
                     <label for='rank'>Rank</label>
