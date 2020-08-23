@@ -24,6 +24,10 @@ body {
   display: grid;
   grid-template-areas: "left right";
   max-width: 900px;
+  border-radius: 66px;
+  box-shadow:  21px 21px 55px #a28071,
+               -21px -21px 55px #ffd5bc;
+
 }
 
 .left-container {
@@ -113,7 +117,7 @@ bold{
 }
 
 .left-container .puppy {
-  bottom: -5px;
+  top: 100px;
   position: absolute;
   text-align: center;
   padding: 10px;

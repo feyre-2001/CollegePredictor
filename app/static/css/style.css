@@ -24,6 +24,8 @@ body {
   display: grid;
   grid-template-areas: "left right";
   max-width: 900px;
+  box-shadow:  21px 21px 55px #a28071,
+               -21px -21px 55px #ffd5bc;
 }
 
 .left-container {

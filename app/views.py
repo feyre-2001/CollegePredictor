@@ -30,7 +30,7 @@ def index():
 
 
         if(rank):
-            result=(int(rank),percentile,category,state,gender,pwd,sortby);
+            result=final(int(rank),percentile,category,state,gender,pwd,sortby);
             ranks=rank;
 
         return render_template("public/result.html",ranks=ranks,category=category,tables=[result.to_html(classes='data')], titles=result.columns.values)
