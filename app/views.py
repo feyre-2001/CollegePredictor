@@ -1,3 +1,4 @@
+import secrets;
 from app import app;
 from .rvp import pvr;
 from .algo import final;
@@ -6,6 +7,10 @@ from flask import render_template, request, redirect, flash
 
 @app.route("/", methods=["GET","POST"])
 def index():
+
+    secret_key=secrets.token_hex(16)
+    app.config["SECRET_KEY"]=secret_key
+
     if(request.method=="POST"):
         req=request.form
 
