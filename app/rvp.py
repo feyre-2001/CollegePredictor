@@ -96,5 +96,8 @@ def pvr(perc,pwd,category):
             regressor.fit(X_train, y_train)
             x=pd.Series([perc])
             z=regressor.predict(x.values.reshape(-1,1))
-        k=int(np.round(z))
+
+    k=float(np.round(z))
+    if(k<=0):
+        k=15
     return k
