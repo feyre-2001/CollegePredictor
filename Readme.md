@@ -1,2 +1,3 @@
-# README (COMING SOON... )
-### IF WE SURVIVE AFTER DEPLOYING THIS
+## JEE Mains 2020 College Predictor 
+
+![Web Demo](data/demo.gif)
