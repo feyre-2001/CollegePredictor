@@ -29,9 +29,10 @@ def index():
 
         if(rank==""):
             ranks=pvr(float(percentile),pwd,category);
+            ranks=int(ranks);
             if(ranks<=0):
                 ranks=2;
-            result=final(float(ranks),float(percentile),category,state,gender,pwd,sortby);
+            result=final(ranks,float(percentile),category,state,gender,pwd,sortby);
 
 
         if(rank):
