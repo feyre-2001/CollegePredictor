@@ -6,9 +6,8 @@ def final(rank1,perc,category,state,gender,pwd,sortby):
     from pathlib import Path
 
     base_path = Path(__file__).parent
+
     file_path = (base_path / "..//app//round1_cleaned.csv").resolve()
-
-
     df=pd.read_csv(file_path)
     if(rank1=='-1'):
         rank=float(pvr(perc,pwd,category))
