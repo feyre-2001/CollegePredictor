@@ -18,10 +18,10 @@
 - The dataframe is sent back and the sorting order is based on the user's input.
 
 ## For Local Use:
-- Clone this Github repository and run 'pip3 install -r requirements.txt' to grab all the necessary packages required.
-- Open the command line and get into this repository.
-
-- If you are using for the first time:
+- Clone this Github repository
+- Open the command line and get into this repository
+- run `pip3 install -r requirements.txt` to grab all the necessary packages required
+- If you are using virtual environment for the first time (otherwise skip the first command below):
 ```
 virtualenv venv -p C:/Users/username/AppData/Local/Programs/Python/Python38/python.exe
 ```
