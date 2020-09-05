@@ -1,40 +1,44 @@
-## JEE Mains 2020 College Predictor 
+# JEE Mains 2020 College Predictor
+*The website* : [www.collegepredictor.ml](www.collegepredictor.ml)
 
 ![Web Demo](data/demo.gif)
 
 ## Technology Stack
-- Pyhton
+- Python
 - HTML
 - CSS
 - Bootstrap
-- Jinja 
+- Jinja
 - Flask
 - ML Libraries: numpy, pandas, sk-learn, matplotlib
 
-## How it Works
-- We take the input the percentile, rank(if provided), gender, quota, home state.
-- If the rank is not provided we calaculate it based on the percentile of 2019s data of rank vs percentile using linear regression.
-- The dataset found on JoSAAs wesbite is used to determine the college and branch that you are likely to get.
-- The dataframe is sent back and the sorting order is based on the user's input.
+## Dataset
+
 
 ## For Local Use:
-- Clone this Github repository
-- Open the command line and get into this repository
-- run `pip3 install -r requirements.txt` to grab all the necessary packages required
-- If you are using virtual environment for the first time (otherwise skip the first command below):
+- Clone this Github repository.
+- Open a CLI and navigate to this repo on your local system.
+- Run `pip3 install -r requirements.txt` to grab all the necessary packages.
+- If you are using virtual environment for the first time then copy the following code:
+
 ```
 virtualenv venv -p C:/Users/username/AppData/Local/Programs/Python/Python38/python.exe
-```
-- Then:
-```
+
 .\venv\Scripts\activate
-cd app
+
+set FLASK_APP=run.py
+set FLASK_ENV=development
+
 flask run
 ```
+Where `username` is the current user.
+
 ## Todo
 - [ ] Mobile Optimization
 - [ ] Having more features in dataset
 - [ ] SEO Friendly
 
-Pull requests are more than welcome! :octocat:
+## License
+This project is licensed under [MIT License](LICENSE.txt). You can learn more about it here. 
 
+**Pull requests are more than welcome!** :octocat:
