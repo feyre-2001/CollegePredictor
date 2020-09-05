@@ -39,6 +39,6 @@ Where `username` is the current user.
 - [ ] SEO Friendly
 
 ## License
-This project is licensed under [MIT License](LICENSE.txt). You can learn more about it here. 
+This project is licensed under [MIT License](LICENSE). You can learn more about it here. 
 
 **Pull requests are more than welcome!** :octocat:
