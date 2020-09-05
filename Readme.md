@@ -29,6 +29,7 @@ virtualenv venv -p C:/Users/username/AppData/Local/Programs/Python/Python38/pyth
 ```
 .\venv\Scripts\activate
 cd app
+set FLASK_ENV=development
 flask run
 ```
 ## Todo
