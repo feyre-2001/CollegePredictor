@@ -1,5 +1,5 @@
 # JEE Mains 2020 College Predictor
-*The website* : [www.collegepredictor.ml](www.collegepredictor.ml)
+*The website* : [www.collegepredictor.ml](https://www.collegepredictor.ml/)
 
 ![Web Demo](data/demo.gif)
 
