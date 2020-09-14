@@ -1,6 +1,8 @@
 # JEE Mains 2020 College Predictor
 *The website* : [www.collegepredictor.ml](https://www.collegepredictor.ml/)
 
+This predictor uses the dataset provided by [JoSAA](https://josaa.nic.in/WebInfo/Page/Page?PageId=1&LangId=P) to predict the colleges an engineering aspirant may get. If no rank is provided, the app predicts the rank using Linear Regression.
+
 ![Web Demo](data/demo.gif)
 
 ## Technology Stack
@@ -13,7 +15,7 @@
 - ML Libraries: numpy, pandas, sk-learn, matplotlib
 
 ## Dataset
-
+[Joint Seat Allocation Authority (JoSAA) 2020](https://josaa.nic.in/webinfo/Page/Page?PageId=6&LangId=P)
 
 ## For Local Use:
 - Clone this Github repository.
