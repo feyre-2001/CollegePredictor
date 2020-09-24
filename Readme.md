@@ -3,7 +3,7 @@
 ![Web Demo](data/demo.gif)
 
 ## Technology Stack
-- Pyhton
+- Python
 - HTML
 - CSS
 - Bootstrap
