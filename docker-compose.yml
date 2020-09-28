@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            target: app
+        command: gunicorn --chdir app run:app -w 2 --threads 2 -b 0.0.0.0:5000 --reload
+        ports:
+          - "5000:5000"
+        volumes:
+          - .:/collegepredictor
+
