@@ -35,10 +35,18 @@ flask run
 ```
 Where `username` is the current user.
 
+## Run Using Docker:
+`docker-compose up --build`
+
 ## Todo
 - [ ] Mobile Optimization
 - [ ] Having more features in dataset
 - [ ] SEO Friendly
+
+## Founders:
+ - [Shubham Palriwala](https://github.com/ShubhamPalriwala) (Full Stack Development & Production)
+ - [Niharika Kabra](https://github.com/feyre-2001) (Machine Learning Algorithm and Dataset Handling)
+ 
 
 ## License
 This project is licensed under [MIT License](LICENSE).
