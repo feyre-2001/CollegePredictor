@@ -1,7 +1,7 @@
-# JEE Mains 2020 College Predictor
+# JEE Mains College Predictor 2020
 *The website* : [www.collegepredictor.ml](https://www.collegepredictor.ml/)
 
-This predictor uses the dataset provided by [JoSAA](https://josaa.nic.in/WebInfo/Page/Page?PageId=1&LangId=P) to predict the colleges an engineering aspirant may get. If no rank is provided, the app predicts the rank using Linear Regression.
+This predictor uses the dataset provided by [JoSAA 2019](https://josaa.nic.in/WebInfo/Page/Page?PageId=1&LangId=P) to predict the colleges an engineering aspirant may get. It takes some inputs from the user and than predicts College. It uses the cutoff of JOSAA last round of last year to predict this year cutoff accordingly . If no rank is provided, the app predicts the rank using Linear Regression.
 
 ![Web Demo](data/demo.gif)
 
