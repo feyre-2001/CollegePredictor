@@ -43,7 +43,7 @@ def pvr(perc,pwd,category):
 
     k = float(np.round(z))
     if(k <= 0):
-        k = 15
+        k = 1
     return k
 
 def predictor(perc, rvp):
