@@ -192,6 +192,12 @@ h3{
   .left-container .puppy {
     position: relative;
   }
+  .radio-container {
+    display: flex;
+  }
+  .radio-container label {
+    width: 50%;
+  }
 }
 
 @media (max-width: 400px) {
