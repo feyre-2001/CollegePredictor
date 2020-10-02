@@ -174,3 +174,52 @@ h3{
   color: white;
   padding: 1px 0 1px 1px;
 }
+
+@media (max-width: 775px) {
+  .signup-container {
+    display: flex;
+    flex-direction: column-reverse; 
+  }
+  .right-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  .left-container {
+    height: auto;
+    overflow: unset;
+    max-width: 500px;
+  }
+  .left-container .puppy {
+    position: relative;
+  }
+  .radio-container {
+    display: flex;
+  }
+  .radio-container label {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .right-container .set {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .right-container .set > div {
+    margin-bottom: 10px;
+  }
+  .right-container label, .right-container input, .right-container .radio-container, .right-container select {
+    width:100%;
+    margin: 0;
+  }
+  .right-container footer {
+    margin: 20px 12px;
+    padding: 0;
+  }
+  .right-container footer #next {
+    width: 100%;
+    border-radius: 0;
+  }
+}

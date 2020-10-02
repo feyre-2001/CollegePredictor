@@ -141,3 +141,46 @@ table,th
   text-align: center;
   padding: 5px;
 }
+
+@media (max-width: 775px) {
+  .signup-container {
+    display: flex;
+    flex-direction: column-reverse; 
+  }
+  .left-container {
+    height: auto;
+    overflow: unset;
+    max-width: 500px;
+  }
+  .left-container .puppy {
+    position: relative;
+    top: 0;
+  }
+  .right-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  .right-container header, h1 {
+    padding: 40px 10px 20px 20px;
+  }
+  .right-container .set {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .right-container footer {
+    margin: 20px 12px;
+    padding: 0;
+  }
+  .right-container footer #next {
+    width: 100%;
+    border-radius: 0;
+  }
+  table.dataframe {
+    margin: 15px;
+  }
+  table.dataframe tr td {
+    padding: 8px;
+  }
+}
