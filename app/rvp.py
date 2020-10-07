@@ -1,102 +1,31 @@
-def pvr(perc,pwd,category):
-    import pandas as pd
-    import numpy as np
-    from sklearn.model_selection import train_test_split
-    from sklearn.linear_model import LinearRegression
-    rvp=pd.read_csv('rvp_cleaned.csv')
-    rvp_g=rvp[rvp['CATEGORY']=='GEN']
-    rvp_gp=rvp[rvp['CATEGORY']=='GEN-PwD']
-    rvp_e=rvp[rvp['CATEGORY']=='EWS']
-    rvp_ep=rvp[rvp['CATEGORY']=='EWS-PwD']
-    rvp_sc=rvp[rvp['CATEGORY']=='SC']
-    rvp_scp=rvp[rvp['CATEGORY']=='SC-PwD']
-    rvp_st=rvp[rvp['CATEGORY']=='ST']
-    rvp_stp=rvp[rvp['CATEGORY']=='ST-PwD']
-    rvp_ob=rvp[rvp['CATEGORY']=='OBC-NCL']
-    rvp_obp=rvp[rvp['CATEGORY']=='OBC-NCL-PwD']
-    if(pwd=='YES'):
-        if(category=='GEN'):
-            X=rvp_gp['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_gp['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-        elif(category=='SC'):
-            X=rvp_scp['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_scp['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-        elif(category=='ST'):
-            X=rvp_stp['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_stp['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-        elif(category=='EWS'):
-            X=rvp_ep['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_ep['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-        else:
-            X=rvp_obp['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_obp['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-    else:
-        if(category=='GEN'):
-            X=rvp_g['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_g['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-        elif(category=='SC'):
-            X=rvp_sc['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_sc['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-        elif(category=='ST'):
-            X=rvp_st['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_st['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-        elif(category=='EWS'):
-            X=rvp_e['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_e['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
-        else:
-            X=rvp_ob['PERCENTILE'].values.reshape(-1,1)
-            y=rvp_ob['RANK'].values.reshape(-1,1)
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-            regressor = LinearRegression()
-            regressor.fit(X_train, y_train)
-            x=pd.Series([perc])
-            z=regressor.predict(x.values.reshape(-1,1))
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 
+
+rvp=pd.read_csv('rvp_cleaned.csv')
+print('Create regressors', flush=True)
+
+def create_regressor(rvp_):
+    X=rvp_['PERCENTILE'].values.reshape(-1,1)
+    y=rvp_['RANK'].values.reshape(-1,1)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+    regressor = LinearRegression()
+    regressor.fit(X_train, y_train)
+    return regressor
+
+categories = ['GEN', 'EWS', 'SC', 'ST', 'OBC-NCL']
+regressors = {
+        category : [
+            create_regressor(rvp[rvp['CATEGORY']==category]),
+            create_regressor(rvp[rvp['CATEGORY']==category + '-PwD'])
+            ] for category in categories
+        }
+
+def pvr(perc,pwd,category):
+    x=pd.Series([perc])
+    z=regressors[category][pwd=='YES'].predict(x.values.reshape(-1,1))
     k=float(np.round(z))
     if(k<=0):
         k=15

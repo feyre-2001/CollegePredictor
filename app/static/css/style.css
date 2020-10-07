@@ -207,8 +207,65 @@ h3 {
   padding: 1px 0 1px 1px;
 }
 
-footer {
-  margin-right: 1em;
-  margin-left: 1em;
-  border-radius: 4px 4px 0 0;
+@media (max-width: 775px) {
+  .signup-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .right-container {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .left-container {
+    height: auto;
+    overflow: unset;
+    max-width: 500px;
+  }
+
+  .left-container .puppy {
+    position: relative;
+  }
+
+  .radio-container {
+    display: flex;
+  }
+
+  .radio-container label {
+    width: 50%;
+  }
 }
+
+@media (max-width: 400px) {
+  .right-container .set {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .right-container .set>div {
+    margin-bottom: 10px;
+  }
+
+  .right-container label, .right-container input, .right-container .radio-container, .right-container select {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right-container footer {
+    margin: 20px 12px;
+    padding: 0;
+  }
+
+  .right-container footer #next {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  footer {
+    margin-right: 1em;
+    margin-left: 1em;
+    border-radius: 4px 4px 0 0;
+  }

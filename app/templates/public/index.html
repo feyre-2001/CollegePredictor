@@ -9,12 +9,22 @@
 
 {% block main %}
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="
+  Want to know which college you might be in according your based on you percentile, quota, gender for JEE Mains 2020 . College Predictor is a website which helps for IIT, JEE Aspirants to predict or find college and Branch you are likely to get into based on you percentile, quota, gender for JEE Mains 2020">
+  <meta name="keywords" content="IIT, JEE, College, Predictor, Engineering, 2020">
+  <meta name="author" content="Niharika Kabra">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <div class='signup-container'>
   <div class='left-container'>
 
     <h1>
       <a href="/" style="color:black">
-        <i class='fas fa-graduation-cap'></i>
+        <i class='fas fa-graduation-cap' alt="Graduation Cap"></i>
         <br><br>
         <b>
           College Predictor 2020
@@ -158,17 +168,24 @@
   </div>
 
 </div>
-<a class="made_with" href="https://github.com/feyre-2001/CollegePredictor" target="_blank">
+<<<<<<< HEAD <a class="made_with" href="https://github.com/feyre-2001/CollegePredictor" target="_blank">
   <footer>
     <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     Source Code on <ion-icon name="logo-github"> </ion-icon>
   </footer>
+  =======
+  <a class="made_with" href="https://github.com/feyre-2001/CollegePredictor" target="_blank" title="Github Source Code Link">
+    <footer>
+      <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+      Source Code on <ion-icon name="logo-github" alt="github logo"> </ion-icon>
+    </footer>
+    >>>>>>> 414f3a6ff7d2cca1004b1e5f6cb1844f08346dea
 
-</a>
+  </a>
 
 
-{% endblock main %}
+  {% endblock main %}
 
-{% block scripts_js %}
-<script src="{{ url_for('static', filename='js/app.js') }}"></script>
-{% endblock scripts_js %}
+  {% block scripts_js %}
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  {% endblock scripts_js %}
