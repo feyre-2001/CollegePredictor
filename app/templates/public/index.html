@@ -15,22 +15,23 @@
     <h1>
       <a href="/" style="color:black">
         <i class='fas fa-graduation-cap'></i>
+        <br><br>
         <b>
           College Predictor 2020
         </b>
       </a>
     </h1>
     <div class="puppy">
-      <p>We are not affiliated with NTA or JOSAA.</p>
-      <p>Our Algorithm is predicting your branches and colleges based on the cutoff lists of previous year provided by JOSAA.</p>
-      <p>We are only showing the top colleges based on previous ranks.</p>
+      <p>Our algorithm predicts your branches and colleges based on the cutoff lists of previous years provided by <a href="https://josaa.nic.in">JOSAA</a>.</p>
+      <p>We only show the top colleges based on previous ranks.</p>
+      <p class="disclaimer">We are not affiliated with NTA or JOSAA.</p>
     </div>
   </div>
 
   <div class='right-container container-fluid h-auto '>
     {% block headerTitle %}
 
-    <h1>Find your expected college and branch based on JEE Mains 2020</h1>
+    <h1>Find your expected college and branch based on JEE Mains 2020.</h1>
     {% endblock headerTitle %}
     <header>
       {% with messages= get_flashed_messages(with_categories=true) %}
@@ -146,26 +147,28 @@
             <label for='category-80-100'>EWS</label>
           </div>
         </div>
-      </header>
-      <footer>
-        <div class='set' id="myfooter">
-          <button id='next'>Next</button>
-        </div>
-      </footer>
+    </header>
+    <footer>
+      <div class='set' id="myfooter">
+        <button id='next'>Next</button>
+      </div>
+    </footer>
     </form>
 
   </div>
 
 </div>
 <a class="made_with" href="https://github.com/feyre-2001/CollegePredictor" target="_blank">
-  <footer><link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-    Source Code on   <ion-icon name="logo-github"> </ion-icon></footer>
+  <footer>
+    <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    Source Code on <ion-icon name="logo-github"> </ion-icon>
+  </footer>
 
-  </a>
+</a>
 
 
-  {% endblock main %}
+{% endblock main %}
 
-  {% block scripts_js %}
-  <script src="{{ url_for('static', filename='js/app.js') }}" ></script>
-  {% endblock scripts_js %}
+{% block scripts_js %}
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock scripts_js %}

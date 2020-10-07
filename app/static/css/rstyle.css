@@ -1,17 +1,17 @@
-ews@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,600&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
 body {
   align-items: center;
   background: #D8AA96;
   color: rgba(0, 0, 0, 0.8);
   display: grid;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Epilogue', sans-serif;
   font-size: 14px;
   font-weight: 400;
   height: 100vh;
@@ -24,10 +24,9 @@ body {
   display: grid;
   grid-template-areas: "left right";
   max-width: 900px;
-  border-radius: 66px;
-  box-shadow:  21px 21px 55px #a28071,
-               -21px -21px 55px #ffd5bc;
-
+  border-radius: 0.5em;
+  box-shadow: 21px 21px 55px #a28071,
+    -21px -21px 55px #ffd5bc;
 }
 
 .left-container {
@@ -38,12 +37,14 @@ body {
   text-align: center;
   width: auto;
 }
+
 .left-container h1 {
-    padding: 10px;
+  padding: 10px;
   color: rgba(0, 0, 0, 0.8);
   display: inline-block;
   font-size: 24px;
 }
+
 .left-container h1 i {
   background: #F7B1AB;
   border-radius: 50%;
@@ -57,14 +58,17 @@ body {
 .right-container {
   background: #f9c7c2;
   display: grid;
-  grid-template-areas: "." ".";
+  grid-template-areas: "."".";
   width: 500px;
 }
+
 .right-container h1:nth-of-type(1) {
   color: rgba(0, 0, 0, 0.8);
   font-size: 23px;
   font-weight: 600;
+  padding-top: 2em;
 }
+
 .right-container .set {
   display: flex;
   justify-content: space-between;
@@ -72,13 +76,12 @@ body {
 }
 
 .right-container header, h1 {
-    padding: 40px 10px 20px 40px;
+  padding: 40px 10px 20px 40px;
 }
 
-bold{
-    font-size: 48px;
+bold {
+  font-size: 48px;
 }
-
 
 .right-container .heading {
   padding: 0px 0px 0px 20px;
@@ -107,11 +110,12 @@ bold{
   border: 1px solid transparent;
   color: #fff;
 }
+
 .right-container footer #next:hover {
   background: #171A2B;
 }
 
-.percentile label,.rank label, .state label, .gender label,.pwd label, .ews label {
+.percentile label, .rank label, .state label, .gender label, .pwd label, .ews label {
   display: block;
   margin-bottom: 5px;
 }
@@ -125,9 +129,7 @@ bold{
   color: white;
 }
 
-
-.made_with
-{
+.made_with {
   bottom: -5px;
   position: absolute;
   font-size: 1.5em;
@@ -136,8 +138,7 @@ bold{
   padding: 1px 0 1px 1px;
 }
 
-table,th
-{
+table, th {
   text-align: center;
   padding: 5px;
 }
