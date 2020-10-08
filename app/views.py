@@ -1,7 +1,7 @@
 import secrets;
 from app import app;
 from .rvp import pvr;
-from .algo import final;
+from .algo import finalList;
 
 from flask import render_template, request, redirect, flash
 
