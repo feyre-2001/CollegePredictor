@@ -39,14 +39,9 @@ Where `username` is the current user.
 `docker-compose up --build`
 
 ## Todo
-- [ ] Mobile Optimization
+- [X] Mobile Optimization
 - [ ] Having more features in dataset
-- [ ] SEO Friendly
-
-## Founders:
- - [Shubham Palriwala](https://github.com/ShubhamPalriwala) (Full Stack Development & Production)
- - [Niharika Kabra](https://github.com/feyre-2001) (Machine Learning Algorithm and Dataset Handling)
- 
+- [ ] SEO Friendly 
 
 ## License
 This project is licensed under [MIT License](LICENSE).
