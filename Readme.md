@@ -1,5 +1,5 @@
 # JEE Mains 2020 College Predictor
-*The website* : [www.collegepredictor.ml](https://www.collegepredictor.ml/) (currently down)
+*The website* : [https://thawing-peak-35281.herokuapp.com/](https://thawing-peak-35281.herokuapp.com/) 
 
 This predictor uses the dataset provided by [JoSAA](https://josaa.nic.in/WebInfo/Page/Page?PageId=1&LangId=P) to predict the colleges an engineering aspirant may get. If no rank is provided, the app predicts the rank using Linear Regression.
 
