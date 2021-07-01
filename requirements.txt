@@ -6,7 +6,7 @@ cycler==0.10.0
 decorator==4.4.2
 distlib==0.3.1
 Django==2.2.24
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 filelock==3.0.12
 Flask==1.1.2
 future==0.18.2
